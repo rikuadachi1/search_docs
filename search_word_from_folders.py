@@ -102,27 +102,36 @@ def convert_to_int(string):
 
     return int(string)
 
+
 def search_text_files(directory, keywords):
     result_list = []
     keywords_lower = [keyword.lower() for keyword in keywords]
-    for root, dirs, files in os.walk(directory):
-        for file in tqdm(files):
-            if file.endswith(".txt"):
-                file_path = os.path.join(root, file)
-                with open(file_path, 'r', encoding='utf-8') as text_file:
-                    content = text_file.read()
-                    content_lower = content.lower()
-                    first_line = content.split('\n')[0].strip()
-                    if first_line.startswith("PDF URL:"):
-                        url = first_line.split("PDF URL:")[1].strip()
-                        if all(keyword in content_lower for keyword in keywords_lower):
-                            # print("あるよ")
-                            # if is_url_valid(url):
-                            title = get_title(content)
-                            category = get_category(title, content)
-                            date = extract_date(content)
-                            result_list.append([category, date, title, url])
-                            # print(result_list)
+    files = [f for f in os.listdir(directory) if f.endswith(".txt")]
+
+    progress_bar = st.progress(0)
+    status_text = st.empty()
+
+    for i, file in enumerate(files):
+        file_path = os.path.join(directory, file)
+        with open(file_path, 'r', encoding='utf-8') as text_file:
+            content = text_file.read()
+            content_lower = content.lower()
+            first_line = content.split('\n')[0].strip()
+            if first_line.startswith("PDF URL:"):
+                url = first_line.split("PDF URL:")[1].strip()
+                if all(keyword in content_lower for keyword in keywords_lower):
+                    title = get_title(content)
+                    category = get_category(title, content)
+                    date = extract_date(content)
+                    result_list.append([category, date, title, url])
+
+        # Update progress
+        progress = (i + 1) / len(files)
+        progress_bar.progress(progress)
+        status_text.text(f"処理中... {i + 1}/{len(files)} ファイル")
+
+    progress_bar.empty()
+    status_text.empty()
     return result_list
 
 def view():
