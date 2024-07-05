@@ -5,6 +5,7 @@ from tqdm import tqdm
 import streamlit as st
 import requests
 import jaconv
+import io
 
 DOWNLOAD_BASE_DIR = 'pdftext_downloads'
 
@@ -161,11 +162,15 @@ def view():
                 for _, row in category_df.iterrows():
                     st.markdown(f"- {row['日付']}: [{row['タイトル']}]({row['URL']})")
 
-            csv = result_df.drop('date_for_sort', axis=1).to_csv(index=False, encoding="shift_jis")
+
+            csv_buffer = io.StringIO()
+            result_df.drop('date_for_sort', axis=1).to_csv(csv_buffer, index=False, encoding="utf-8-sig")
+            csv_str = csv_buffer.getvalue()
+
             st.write("リストをダウンロード可能です。")
             st.download_button(
                 label="Download CSV",
-                data=csv,
+                data=csv_str.encode('utf-8-sig'),  # UTF-8 with BOM
                 file_name="search_results.csv",
                 mime="text/csv",
             )
