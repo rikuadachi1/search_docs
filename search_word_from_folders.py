@@ -176,6 +176,7 @@ def view():
             )
         else:
             st.write("該当するテキストファイルが見つかりませんでした。")
+            print("#")
 
 if __name__ == "__main__":
     view()
