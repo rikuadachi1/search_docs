@@ -7,7 +7,7 @@ import PyPDF2
 import io
 
 BASE_URL = 'https://www.emsc.meti.go.jp/activity/'
-DOWNLOAD_BASE_DIR = 'pdftext_downloads'
+DOWNLOAD_BASE_DIR = 'emsc'
 
 
 def get_soup_from_url(url):
@@ -35,13 +35,13 @@ def extract_content_between_comments(soup, start_comment, end_comment):
 
 def get_initial_links(url):
     soup = get_soup_from_url(url)
-    content = extract_content_between_comments(soup, '本文開始', '▼▼フッターここから▼▼')
+    content = extract_content_between_comments(soup, '見出し', '▼▼フッターここから▼▼')
     if not content:
         return []
 
     content_soup = BeautifulSoup(content, 'html.parser')
     links = [urljoin(BASE_URL, a['href']) for a in content_soup.find_all('a', href=True)]
-    return [link for link in links if "index_system" in link and "#" not in link]
+    return [link for link in links if "index_log" in link and "#" not in link]
 
 
 def extract_pdf_text(url):
@@ -96,7 +96,7 @@ def get_all_links(url, max_depth=3):
 
             content_soup = BeautifulSoup(content, 'html.parser')
             page_links = [urljoin(current_url, a['href']) for a in content_soup.find_all('a', href=True)]
-            page_links = [a for a in page_links if "index_system.html" not in a and "#" not in a]
+            page_links = [a for a in page_links if "index_emsc.html" not in a and "#" not in a]
 
             for link in page_links:
                 if link.startswith(('http', 'https')):
@@ -111,9 +111,10 @@ def get_all_links(url, max_depth=3):
 
 
 def crawl_and_save():
-    url = urljoin(BASE_URL, 'index_system.html')
+    url = urljoin(BASE_URL, 'index_emsc.html')
     initial_links = get_initial_links(url)
     all_links = set()
+    print(initial_links)
 
     for link in tqdm(initial_links):
         if link.startswith(('http', 'https')):
@@ -128,6 +129,7 @@ def crawl_and_save():
             dir_name = os.path.join(DOWNLOAD_BASE_DIR, relative_path)
 
             if link.endswith('.pdf'):
+                print("test")
                 save_pdf_as_text(link, os.path.dirname(dir_name))
 
             pbar.update(1)

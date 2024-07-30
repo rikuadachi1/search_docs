@@ -7,7 +7,17 @@ import requests
 import jaconv
 import io
 
-DOWNLOAD_BASE_DIR = 'pdftext_downloads'
+# DOWNLOAD_BASE_DIR = 'system'
+
+DOWNLOAD_BASE_DIRS = {
+    'emsc': 'emsc',
+    'system': 'system'
+}
+
+FOLDER_NAMES = {
+    'emsc': '電力・ガス取引監視等委員会',
+    'system': '制度設計専門会合'
+}
 
 
 def is_url_valid(url):
@@ -103,17 +113,19 @@ def convert_to_int(string):
 
     return int(string)
 
-
-def search_text_files(directory, keywords):
+def search_text_files(directories, keywords):
     result_list = []
     keywords_lower = [keyword.lower() for keyword in keywords]
-    files = [f for f in os.listdir(directory) if f.endswith(".txt")]
+
+    all_files = []
+    for directory in directories:
+        files = [os.path.join(directory, f) for f in os.listdir(directory) if f.endswith(".txt")]
+        all_files.extend(files)
 
     progress_bar = st.progress(0)
     status_text = st.empty()
 
-    for i, file in enumerate(files):
-        file_path = os.path.join(directory, file)
+    for i, file_path in enumerate(all_files):
         with open(file_path, 'r', encoding='utf-8') as text_file:
             content = text_file.read()
             content_lower = content.lower()
@@ -124,29 +136,47 @@ def search_text_files(directory, keywords):
                     title = get_title(content)
                     category = get_category(title, content)
                     date = extract_date(content)
-                    result_list.append([category, date, title, url])
+                    directory_name = os.path.basename(os.path.dirname(file_path))
+                    committee = FOLDER_NAMES.get(directory_name, directory_name)
+                    result_list.append([category, date, title, url, committee])
 
-        # Update progress
-        progress = (i + 1) / len(files)
+        progress = (i + 1) / len(all_files)
         progress_bar.progress(progress)
-        status_text.text(f"処理中... {i + 1}/{len(files)} ファイル")
+        status_text.text(f"処理中... {i + 1}/{len(all_files)} ファイル")
 
     progress_bar.empty()
     status_text.empty()
     return result_list
 
+
 def view():
     st.title("資料ワード検索")
     keyword_input = st.text_input("検索ワード（複数の場合はスペースで区切ってください）")
     st.write("※ 公開情報すべてを網羅しているとは限りません。情報の利用についてはご自身の判断で行ってください。")
+
+    # チェックボックスを追加（表示名を変更）
+    search_emsc = st.checkbox(f"{FOLDER_NAMES['emsc']}を検索", value=True)
+    search_system = st.checkbox(f"{FOLDER_NAMES['system']}を検索", value=True)
+
     if st.button("run"):
         keywords = keyword_input.split()
         if not keywords:
             st.write("検索ワードを入力してください。")
             return
 
-        result_list = search_text_files(DOWNLOAD_BASE_DIR, keywords)
-        result_df = pd.DataFrame(result_list, columns=["カテゴリ", "日付", "タイトル", "URL"])
+        # 選択されたフォルダーのリストを作成
+        selected_dirs = []
+        if search_emsc:
+            selected_dirs.append(DOWNLOAD_BASE_DIRS['emsc'])
+        if search_system:
+            selected_dirs.append(DOWNLOAD_BASE_DIRS['system'])
+
+        if not selected_dirs:
+            st.write("少なくとも1つの委員会を選択してください。")
+            return
+
+        result_list = search_text_files(selected_dirs, keywords)
+        result_df = pd.DataFrame(result_list, columns=["カテゴリ", "日付", "タイトル", "URL", "委員会"])
 
         if not result_df.empty:
             st.write(f"検索結果: {len(result_df)} 件見つかりました")
@@ -160,8 +190,7 @@ def view():
                 st.markdown(f"### {category}")
                 category_df = result_df[result_df['カテゴリ'] == category]
                 for _, row in category_df.iterrows():
-                    st.markdown(f"- {row['日付']}: [{row['タイトル']}]({row['URL']})")
-
+                    st.markdown(f"- {row['日付']} ({row['委員会']}): [{row['タイトル']}]({row['URL']})")
 
             csv_buffer = io.StringIO()
             result_df.drop('date_for_sort', axis=1).to_csv(csv_buffer, index=False, encoding="utf-8-sig")
@@ -176,7 +205,6 @@ def view():
             )
         else:
             st.write("該当するテキストファイルが見つかりませんでした。")
-            print("#")
 
 if __name__ == "__main__":
     view()
