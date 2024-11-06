@@ -6,8 +6,8 @@ from tqdm import tqdm
 import PyPDF2
 import io
 
-BASE_URL = 'https://www.emsc.meti.go.jp/activity/'
-DOWNLOAD_BASE_DIR = 'emsc'
+BASE_URL = 'https://www.occto.or.jp/iinkai/youryou/kentoukai/2023/'
+DOWNLOAD_BASE_DIR = 'youryou'
 
 
 def get_soup_from_url(url):
@@ -35,13 +35,14 @@ def extract_content_between_comments(soup, start_comment, end_comment):
 
 def get_initial_links(url):
     soup = get_soup_from_url(url)
-    content = extract_content_between_comments(soup, '見出し', '▼▼フッターここから▼▼')
+    # content = extract_content_between_comments(soup, '見出し', '▼▼フッターここから▼▼')
+    content = extract_content_between_comments(soup, 'コンテンツここから', 'msearch')
     if not content:
         return []
 
     content_soup = BeautifulSoup(content, 'html.parser')
     links = [urljoin(BASE_URL, a['href']) for a in content_soup.find_all('a', href=True)]
-    return [link for link in links if "index_log" in link and "#" not in link]
+    return [link for link in links if "youryou" in link and "#" not in link]
 
 
 def extract_pdf_text(url):
@@ -76,7 +77,7 @@ def save_pdf_as_text(url, parent_dir):
     return False
 
 
-def get_all_links(url, max_depth=3):
+def get_all_links(url, max_depth=2):
     visited_links = set()
     all_links = set()
     to_visit = [(url, 0)]
@@ -90,7 +91,8 @@ def get_all_links(url, max_depth=3):
 
         try:
             soup = get_soup_from_url(current_url)
-            content = extract_content_between_comments(soup, '本文開始', '▼▼フッターここから▼▼')
+            # content = extract_content_between_comments(soup, '本文開始', '▼▼フッターここから▼▼')
+            content = extract_content_between_comments(soup, 'コンテンツここから', 'msearch')
             if not content:
                 continue
 
@@ -111,7 +113,7 @@ def get_all_links(url, max_depth=3):
 
 
 def crawl_and_save():
-    url = urljoin(BASE_URL, 'index_emsc.html')
+    url = urljoin(BASE_URL, 'index.html')
     initial_links = get_initial_links(url)
     all_links = set()
     print(initial_links)

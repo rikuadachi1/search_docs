@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LanguageServerSettings">
+    <option name="languageServerEnabled" value="false" />
+    <option name="workspaceFolders">
+      <list>
+        <WorkspaceFolder>
+          <option name="name" value="search" />
+          <option name="uri" value="C:\Users\2240161\PycharmProjects\search" />
+        </WorkspaceFolder>
+      </list>
+    </option>
+  </component>
+</project>

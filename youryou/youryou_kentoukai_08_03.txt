@@ -1,0 +1,422 @@
+PDF URL: https://www.occto.or.jp/iinkai/youryou/kentoukai/2017/files/youryou_kentoukai_08_03.pdf
+
+DRの参加のあり方について
+平成30年2月1日
+容量市場の在り方等に関する検討会事務局 ※第8回容量市場の在り方等に関する検討会 資料3
+※本検討会は、資源エネルギー庁と電力広域的運営推進機関の共同事務局により開催している。
+1
+第17回制度検討作業部会（ 12/26）の中間論点整理案において示された、 DRに関するさらに検
+討を深めるべき事項について、整理を行う。
+具体的には、従来型電源とは異なる DRのリクワイアメントや情報提出、調整係数 、期待容量の算定 、
+実効性テスト等について、参加プロセスに沿って整理を行った。１．はじめに（本日の概要）
+第17回制度検討
+作業部会資料より
+（DR関連部分抜粋）
+2
+ １．はじめに（本日の概要）
+第17回制度検討
+作業部会資料より
+（DR関連部分抜粋）
+3
+ １．はじめに（本日の概要）
+第17回制度検討
+作業部会資料より
+（DR関連部分抜粋）
+4 ２．本日のアジェンダ
+諸外国においては、 DR専用メニューを廃止し容量市場に統合されていく方向 ※である。
+我が国においても、 DRの参加については、電源と DRの公平性 や信頼度を保ちつつ、中長期的な供
+給力の効率的な確保を目指した制度設計が必要である。
+本日は、これまでの事業者ヒアリング等を踏まえ 、DRにとっての参加容易性とリクワイアメントとペナル
+ティによる実効性の担保、という考え方で論点を整理した。
+参加登録
+応札要件
+リクワイアメント
+アセスメント
+ペナルティ＜論点＞
+•アグリゲーターの事業者情報により参加登録
+•メインオークション応札容量
+•応札容量のエビデンス
+•追加オークションの参加•需要家の確保・見通しに基づく期待容量で
+応札
+•追加オークションまでに需要家リスト で実効
+性テスト実施
+•発動回数 制約ありのリクワイアメン
+ト
+•需要家リストの変更•容量市場と需給調整市場の関係について
+整理することが必要
+•調整力として活用されることを念頭に、リクワ
+イアメントにおける「一定時間稼働する」等の
+要件を変更
+•発動回数制約ありのアセスメント ―
+•発動回数制約ありのペナルティ ―•必要な情報は何か（エビデンス）
+•入札単位、最低容量 、登録方法＜TFで整理された方向性＞※第5回電力基本政策小委員会、 第6回容量市場検討会資料参照
+5 ３．参加登録（入札単位、最低容量）
+電源は、入札単位は電源ユニット単位、最低容量は 1,000kW として検討を進めている。
+DRの参加については、アグリゲーターは、複数の DR可能な需要家をアグリゲートした参加が可能であ
+るため、入札単位はアグリゲーター単位とし、最低容量は電源と同様としてはどうか。
+また、入札エリアについては、市場分断の可能性を踏まえると、複数のエリアの需要家をアグリゲートす
+ることは認めず、エリア毎に入札を行うこととしてはどうか。な お、最低容量 はエリア毎に満たすこととして
+はどうか。
+（電源の場合は、電源ユニット単位で参加登録 が行われるため、入札エリアは単一となる）
+【複数エリアの需要家をアグリゲートして参加する場合のイメージ 】
+エリアA エリアB
+需要家
+a需要家
+b需要家
+c需要家
+d需要家
+e
+（500）アグリゲーター 事業者
+（500）（500） （500）（500）（期待容量： 1,500以下） （期待容量： 1,000以下）
+アグリゲーター事業者（複数エリアで 2,500kW を集約）が、エリア Aへ1,500kW 、エリアBへ1,000kW をそれぞれ応札可能
+6 ３．参加登録（登録方法）
+国の審議会において、 DR等については調整力で活用されることを念頭に、リクワイアメントを「一定回
+数発動可能」等とすることの提案がなされている。
+そのため、参加登録において、通常のリクワイアメントで参加するか、発動回数等の制約ありで参加す
+るか、登録時に選択することが必要ではないか。
+以下、 DRは、発動回数等の制約ありで参加することを前提に整理をおこなう。
+（DRの通常リクワイアメントでの参加は、アセスメント方法等の課題もあるため、必要に応じて検討することとする。）
+第16回制度検討
+作業部会資料より
+7 ３．参加登録（必要な情報）
+第6回容量市場検討会において、メインオークション を4年前に実施するため、 DRの参加登録時に必
+要とされる要件は、アグリゲーター 事業者情報 のみとし、需要家リスト 等のエビデンス提出は 不要と整理
+した。
+DR事業者に提出を求めるエビデンス（需要家リスト等）についても、発電事業者同様に参加登録時に提出を求めること
+が考えられるが、発電事業者が参加登録する発電設備とは異なり 、需要家リスト等 は需要抑制を契約できる需要家の状
+況によって内容が変更されることが想定される。
+そこで、 DR事業者については、参加登録時には DR事業者情報を求めるのみとし、需要家リスト等のエビデンスの提出は
+オークションへの参加の都度求めることとしてはどうか。
+例えば、現在の調整力公募で電源 Ⅰ’に求めている「集約する需要家等の一覧表」等の資料（需要家リスト等）の提出
+を求めることが考えられるが、需給調整市場における商品設計の議論や DR事業者等の意見を踏まえながら、引き続き検
+討を進めることとしたい 。
+【東京電力パワーグリッド株式会社 平成29年度電源 Ⅰ’厳気象対応調整力募集要綱（案）抜粋 】
+第6回容量市場
+検討会資料より抜粋
+8 （参考） PJMにおけるアグリゲーターの需要家リスト提出
+PJMは、オークションの実施前に、 DR事業者へ対して 「DR Sell Offer Plan 」（応札容量やビジネス
+プラン等）の 提出を求めている。
+需要家情報（ 負荷遮断容量等 ）は、供給力提供の対象年度（実需給期間） の前に、「緊急時
+負荷遮断プログラム」の登録において、提出している。
+【ＰＪＭ DR Sell Offer Plan Summary 】
+DR Sell Offer Plan Summary
+RPM Auction Delivery Year
+DR Plan Submittal for: 2017/2018
+Submission Date:
+* Successful validations do not provide a guarantee of template completeness or plan approval
+Company Name: * Validations in template are intended only to aid template completion
+Company Short Name in eSuite: Planned DR Details Validation Pass
+Name of Company Contact: Schedule Validation Pass
+Phone Number:
+Email Address:
+Zone or Sub-ZoneExisting Nominated
+DR Value* (ICAP
+MWs)Planned
+Nominated
+DR Value
+ (ICAP MWs)Total
+Nominated
+DR Value
+(ICAP MWs)Historical Zonal Max
+Registered**
+ (ICAP MWs)Zonal Max
+Cleared from
+past three Base
+Residual
+Auctions**
+(ICAP MWs)Higher of Zonal
+Max Registered
+MW, Zonal Max
+Cleared, or 10
+MW**  (ICAP MWs)Planned MWs
+Requiring
+Additional
+Documentation*
+* (ICAP MWs)
+AECO 0 0 0 0 0 0 0
+AEP 0 0 0 0 0 0 0
+APS 0 0 0 0 0 0 0
+ATSI (excluding Cleveland LDA) 0 0 0 0 0 10 0*Zone of concern
+Cleveland LDA 0 0 0 0 0 10 0*Zone of concern
+BGE 0 0 0 0 0 0 0
+COMED 0 0 0 0 0 0 0
+DAYTON 0 0 0 0 0 0 0
+DEOK 0 0 0 0 0 0 0
+DOM 0 0 0 0 0 0 0
+DPL (excluding DPL SOUTH LDA) 0 0 0 0 0 0 0
+DPL SOUTH LDA 0 0 0 0 0 0 0
+DUQ 0 0 0 0 0 0 0
+EKPC 0 0 0 0 0 0 0
+JCPL 0 0 0 0 0 0 0
+METED 0 0 0 0 0 0 0
+PECO 0 0 0 0 0 0 0
+PENELEC 0 0 0 0 0 0 0
+PEPCO 0 0 0 0 0 0 0
+PPL 0 0 0 0 0 0 0
+PSEG (excluding PS NORTH LDA) 0 0 0 0 0 0 0
+PS NORTH LDA 0 0 0 0 0 0 0
+RECO 0 0 0 0 0 0 0
+TOTAL 0 0 0 0 0 20 0MWs Intend to Offer Planned MWs Requiring Additional Documentation**
+Planned DR Details
+RPM Auction Delivery Year
+Company Short Name: DR Plan Submittal for: 2017/2018
+Submission Date:
+Description of program(s):
+Equipment details(s):
+Description of customer acquisition strategy:
+Key Assumptions:
+Planned Nominated DR Value by Customer Segment:
+Zone/Sub-zoneCustomer
+Segment# of End-Use
+Customers in DYAverage PLC per
+customer (kW)Average
+Nominated DR
+Value (kW) per
+customerEstimated
+Nominated
+DR Value
+(MWs)
+0.000Total of Nominated DR
+Values by Customer
+Segment & End-Use
+Customer Site 0.000
+0.000 Planned Summary Total 0.000
+0.000 Validation Pass
+0.000
+0.000
+Planned Nominated DR Value by End-Use Customer Site:
+Zone/Sub-zoneEDC Account
+Number* Customer NameSite Street
+Address Site City Site State Site Zip Code Customer SegmentActual (if
+known) or
+estimate of
+current PLC
+(kW)Estimate of
+auction DY
+PLC (kW)Estimated
+Nominate
+d DR
+Value
+(kW)Total
+Estimated
+Nominate
+d DR
+Value
+0.000
+0.000
+0.000
+0.000
+0.000
+Notes:
+If you report an Estimated Nominated DR Value for an end-use customer site in the “Planned Nominated DR Value by End-Use Customer Site”
+table, please do not include the Estimated Nominated DR Value for such end-use customer site in the “Planned Nominated DR Value by Customer
+Segment” table
+If there are Planned MWs that Require Additional Documentation in a Zone of Concern, such Planned MWs must be supported by end-use customer specific data reported in
+“Planned Nominated DR Value by End-Use Customer Site” table.Describe the program(s) that you plan to employ to achieve load reduction at end-use customer site(s).
+List equipment that you plan to control at end-use customer site(s).   If applicable, provide description of cycling control strategy.
+List equipment that you plan to install at end-use customer sites(s).
+Provide assumptions regarding whether or not interval meters will need to be installed at end-use customer site(s).
+Describe your customer acquisition strategy, including any strategic partnerships and third party mechanism.
+List all key assumptions used in the development of Estimated Nominated DR Value for a customer segment (such as size of the market for customer segment and considerations made for other CSPs targeting this customer
+segment).  If further key assumptions within a customer segment are used (such as dwelling type targeted for residential segment or county/zip codes targeted for a customer segment), please provide such assumptions.
+Provide current size of sales force and expected size of sales force needed to achieve planned DR.
+Discuss any additional key assumptions  (that have not already been captured above) that impact  your total planned Nominated DR Values and your ability to physically deliver the total planned Nominated DR values in the Delivery
+Year (e.g., assumptions regarding regulatory approval of program(s))
+The sum of the Estimated Nominated DR Values for a zone/sub-zone in the above two tables must equal the Planned Nominated DR Value for the
+zone/sub-zone in the DR Sell Offer Summary tab.*EDC Account Number is optional, all other data fields are required.
+ＳＡＭＰＬＥ
+＜補足＞
+○「DR Sell Offer Plan 」では、アグリゲーター事業者に以下の提出を求めている。
+・会社情報
+・エリアごとの、既存と新規に分けた応札容量
+・ビジネスプラン（対象セグメントや抑制方法、 顧客獲得戦略 等）
+9 ３．参加登録（必要な情報）
+参加登録をオークション前に行うにあたり、必要な情報の提出については、後述する実効性テストの実
+施によって期待容量を確定する等を踏まえ、 PJMと同様に最小限でよいとしてはどうか。
+具体的には、アグリゲーター事業者単位の期待容量とビジネスプランとしてはどうか。
+アグリゲーター 事業者単位の期待容量 は、確保して いる期待容量と具体的かつ積み上げ型の分析に
+基づく期待 容量に区分することとしてはどうか。
+＜参加登録に必要な情報（案）＞
+○アグリゲーター事 業者情報
+○アグリゲーター事 業者単位の期待容量
+（確保している期待容量と分析に基づく期待
+容量を区分）
+○ビジネスプラン
+（抑制制御方法や需要家獲得予定等）＜参加登録に必要な情報＞
+○アグリゲーター事 業者情報
+○アグリゲーター事業者の需要 抑制実績
+（需要抑制実績や 実証試験結果、実績がない
+場合は実績 保有者から技術的支援を受ける
+旨の証明書類 ）
+○需要家リスト
+（供給地点特定番号、契約電力量、電力供出
+方法、連絡手段、設備性能の証明書類 等）
+○応札容量
+（需要家 リストに需要家毎の供出電力を記載）（参考）電源 Ⅰ´募集要項
+10 （参考）参加 登録（国の審議会での整理）
+DRのオークション参加要件に関しては、国の審議会で以下と整理している。
+約4年前のメインオークション 時に実需給時の 需要家の需要等を確定することは困難と考えられる
+が、メインオークション 時においても、 一定のDRの参加を見込んでおくことが 適当
+参加登録時の 需要家確保の状況に応じた期待容量に加え て、具体的かつ積み上げ型の分析に
+基づく期待 容量を加味した容量で応札可能 とし、需要家リストは完全に揃っていなくても よい
+第16回制度検討
+作業部会資料より
+11 ４．応札要件（メインオークションの応札容量）
+参加登録時に確保
+している期待容量具体的かつ積み上げ型の
+分析に基づく期待容量メインオークションにおいてアグリゲーター事業者が応札可能な容量は、参加登録情報におけるアグリ
+ゲーター事業者の 期待容量の合計以下 としてはどう か。
+また、需要家単位の期待容量は、アグリゲーターが需要家の稼働状況等を踏まえて算定することとな
+るが、市場管理者が需要家単位の期待容量の妥当性を確認することは困難であるため、アグリゲー
+ターが管理しておくこととしてはどうか。
+アグリゲーター
+事業者の
+応札可能な容量＜参加登録情報＞
+12 ４．応札要件 （実効性テスト）
+DRは、メインオークションでの落札後 、実需給期間 の実効性を確認する ため、国の 審議会において、
+追加オークションまでに実効性テストを行うと整理 した。
+実効性テストは、アグリゲーターがメインオークションで落札した期待容量を確定する役割がある。
+実効性テストを行うため、需要家リストはこのタイミングで確定し、市場管理者へ報告する必要がある。
+需要家リストは、 現在の調整力公募で電源 Ⅰ’に求めている「集約する需要家等の一覧表」等の資
+料（需要家リスト等 ）が考えられるが 、引き続き 検討を進めることとしたい 。
+実効性テストの実施時期は、追加オークションの実施時期を 1年前とした場合、 事前の高需要期に確
+認する必要があることから、 2年前の夏～冬季に実施することとしてはどうか。また、具体的な時期につ
+いては、上記の主旨を前提として、 TSOがアグリゲーターと も相談して決めることとしてはどうか。
+メイン
+オークション
+（x-4年）実効性テスト
+（x-2年の
+夏～冬季）追加
+オークション
+（x-1年）実需給期間
+（x年）需要家リス
+ト確定【メインオークションへの参加イメージ 】
+参加登録
+13 ４．応札要件 （実効性テスト）
+実効性テストは、アグリゲーター単位、または 需要家単位で行うことが考えられる。
+アグリゲーター 単位とする場合は全アグリゲーターが毎年実効性テストを行い、需要家単位の場合は新
+規需要家の追加分のみ行うことが考えられる。
+アグリゲーター単位で行う場合、毎年、アグリゲーターの期待容量を確認できること、需要家単位で行
+う場合、電源と比べて多数の需要家のテストの実施、個別管理が必要となることから、アグリゲーター
+単位で行うこととしてはどう か。
+実効性テストの結果で、メインオークションの落札 容量を下記の通り確定してはどうか。
+実効性テストの結果 ≧落札容量 ⇒落札容量はメインオークションの落札容量
+（テスト結果による落札容量の増加はしない）
+実効性テストの結果＜落札容量 ⇒落札容量は実効性テストの結果
+（落札容量から不足した場合、 落札保証金（設定した場合）に 関するペナルティが 発生）
+実効性テストに必要な評価方法は、 ERAB検討会 ※と協調して整理を行ってはどうか。
+※ERAB検討会・・・エネルギー ・リソース・アグリゲーション・ビジネス検討会
+14 ４．応札要件 （メインオークションと 実効性テストにおける 落札容量のイメージ）
+メイン応札時実効性テスト
+期待容量
+メイン応札後から
+実効性テストまでの間需要家リスト
+落札容量需要家リスト
+←オークション時の 落札容量
+・テスト結果が 落札容量以下
+の場合、未達分はリリース
+・別途ペナルティが発生実効性テスト 追加オークション追加オークション
+確保してい る期待容量＋
+具体的かつ積み上げ型
+分析に基づく期待容量落札容量は変更不可需要家リストは、実効性
+テストまで にいったん確定・テスト結果が落札容量以上の
+超過分が発生した場合、落札
+容量は変わらない
+←テスト結果
+←オークション時の 落札容量
+←テスト結果参加登録
+情報
+15 ４．応札要件（追加オークション の参加）
+追加オークション に参加する場合は 、以下の要件としてはどうか。
+参加登録における必要情報は、アグリゲーター情報、需要家リストとする
+実効性テストに参加する
+応札容量は、実効性テストの結果とする
+なお、メインオークションから参加している アグリゲーターで、 実効性テスト結果がメインオークションでの 落
+札容量を超過した場合、超過分は追加オークションで応札 することが可能 としてはどうか 。
+実効性テスト
+（x-2年の
+夏～冬頃）追加
+オークション
+（x-1年）実需給
+期間
+（x年）需要家リス
+ト確定【追加オークションへ の参加イメージ 】
+参加登録
+16 ４．応札要件（追加オークションの 参加イメージ）
+需要家リスト
+期待容量
+実効性テスト 追加オークション 応札時 適宜
+実効性テスト需要家リスト
+期待容量
+追加オークション需要家リスト
+落札容量需要家リスト
+←落札容量
+追加オークションから参加するアグリゲーターは、
+需要家リストの提出と 実効性テスト結果により
+応札メインオークションから参加しているアグリゲーターで、 実効性
+テストの結果、メインオークションの 落札容量の超過分 は追
+加オークションに応札可能【メインオークションから参加している場合 】
+【追加オークションから参加する場合 】
+17 ５．リクワイアメント（調整力 としての活用）
+容量市場のリクワイアメント は、容量市場で国全体で必要な kW価値を取引することから、落札した電
+源は、kWhもしくはΔkWで最大限活用することが 必要とされている。
+主に調整力等に用いられる電源等については、調整力として活用されることを念頭に、リクワイアメント
+における「一定時間稼働する」等の要件を変更することと している（ 例：年間で一定回数を発動可能
+な状態にしておく等 ）。
+第16回制度検討
+作業部会資料より
+
+18 ５．リクワイアメント（発動 回数ありの場合 のリクワイアメント）
+「発動回数等の制約あり」とした場合のリクワイアメントは、調整力公募における電源 Ⅰ‘を参考として、
+年間発動回数、指令応動、発動後の継続時間等としてはどうか。
+なお、具体的なリクワイアメントに ついては、需給調整市場の設計も踏まえ、引き続き 検討を行う。
+（参考）東京電力 PG平成28年度電源 Ⅰ´公募要領
+年間発動回数：年 12回以内（平日 9～20時）
+指令応動： 3時間以内
+発動後の継続時間： 3時間
+19 ５．リクワイアメント （需要家リストの変更）
+国の審議会 で、電源等の差し替えが出来る期間を「実需給の一定期間前までに」と整理している。
+DRについては、アグリゲーター単位で応札が行われるため、アグリゲーターの期待容量を構成する需要
+家リストの変更について整理が必要 である。
+需要家リストの変更は、電源等の差し替えと同様に、「実需給の 一定期間前 まで変更可能」とするこ
+ととしてはどうか。
+第12回制度検討
+作業部会資料より
+20 ６．アセスメント
+アセスメントは、落札した電源のリクワイアメント達成状況を、実効的に確認できなければならない。
+DRについては、実需給期間中の発動指令に対する達成結果でアセスメントを実施してはどうか。
+例えば、発動回数のリクワイアメントを年 12回以内（ P）と設定した場合においても、最低 ●回は発
+動することとしてはどうか。
+合否判定については、応札単位であるアグリゲーター 単位で判断することとしてはどうか。
+合否判定の判断基準 は、継続時間における平均値が一定割合以上（例えば、● %以上成功（3
+時間平均）等が考えられるが、具体的な基準については引き続き検討を行う。
+アセスメントに 必要な評価 方法は、 ERAB検討会と協調して整理を行ってはどうか。
+21 ７．ペナルティ
+ペナルティは、落札電源等に対し、リクワイアメントを遵守させることが目的となる。
+電源のペナルティについては、 kW価値を提供することの実効性を高める方策として 、落札保証金、 金
+銭的ペナルティ、 参入ペナルティを パッケージとして 組み合わせることとしている。
+DRのペナルティについて も、電源と同様に、落札 保証金（設定した場合）、 金銭的ペナルティ（追
+加的ペナルティ含む）、 参入ペナルティをパッケージとして 組み合わせることとしてはどうか。
+金銭的ペナルティの評価方法については、年間発動回数における達成状況をもとに評価するとしてはど
+うか。
+金銭的ペナルティの総支払額上限については電源と同様としてはどうか。
+22 （参考）これまでの議論における委員意見
+また、第 16回制度検討作業部会（ 12/12）に先立ち、第 6回容量市場のあり方に関する検討会
+（11/13）において、 DRの参加はアグリゲーターを参加主体とする整理、および最低入札容量の設
+定や提出を求めるエビデンス内容・時期を今後整理していく事項として示して議論したところ、主な意
+見は以下のとおり。
+「市場を分けるという極端なことをしなくとも、導入量に制限を設ける ことはありうる 」、「発動制限が緩いDRは制
+限を超えて入ってもよい設計も ありうる」（松村委員）
+「4年前にエビデンス提出を求めるなら、 需要家リストの確認といったリクワイアメントは課さない のではないか」
+（松村委員）
+「提出資料へ勝手 に需要家名を記載できない 。1年前に見直す ことを前提に記載の理解をいただく」 （市村オ
+ブザーバー）
+「予備力の内数とした場合、要件が緩い電源が多く入ると供給信頼度が下がる 。平常時の通常リスク対応も
+工夫が必要」、「 差替は当然あると思うが、 直前になって期待していた供給力が無いことが心配 」（岡本委
+員）
+「需要家リスト提出 は４年前でなく １年前でも困るということではない 。直前に無いこととは区別して議論を」、
+「差替は現在の電源 Ⅰ´においても可能。 信頼性のあるリスト提出を前提に、追加オークション以降でも差替
+可能な設計となる と思われる。」（松村委員）
+「今後のDR事業者の参入拡大を考慮し、 最低入札容量の低減に向け検討していきたい 」（山田委員 ）
+「DRが需給調整市場で落札 するときは、 リクワイアメントは切り分けて考える ことも十分あり得る」（新川 オブ
+ザーバー）

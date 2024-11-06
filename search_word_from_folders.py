@@ -11,12 +11,14 @@ import io
 
 DOWNLOAD_BASE_DIRS = {
     'emsc': 'emsc',
-    'system': 'system'
+    'system': 'system',
+    'youryou': 'youryou'
 }
 
 FOLDER_NAMES = {
     'emsc': '電力・ガス取引監視等委員会',
-    'system': '制度設計専門会合'
+    'system': '制度設計専門会合',
+    'youryou': '容量市場検討会'
 }
 
 
@@ -157,6 +159,7 @@ def view():
     # チェックボックスを追加（表示名を変更）
     search_emsc = st.checkbox(f"{FOLDER_NAMES['emsc']}を検索", value=True)
     search_system = st.checkbox(f"{FOLDER_NAMES['system']}を検索", value=True)
+    search_youryou = st.checkbox(f"{FOLDER_NAMES['youryou']}を検索", value=True)
 
     if st.button("run"):
         keywords = keyword_input.split()
@@ -170,6 +173,8 @@ def view():
             selected_dirs.append(DOWNLOAD_BASE_DIRS['emsc'])
         if search_system:
             selected_dirs.append(DOWNLOAD_BASE_DIRS['system'])
+        if search_youryou:
+            selected_dirs.append(DOWNLOAD_BASE_DIRS['youryou'])
 
         if not selected_dirs:
             st.write("少なくとも1つの委員会を選択してください。")
